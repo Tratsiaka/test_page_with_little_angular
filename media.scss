@@ -1,0 +1,314 @@
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.headerNavigation{
+    &__links{
+        width: 30%;
+    }
+    &__item{
+        padding-left: 15%;
+    }
+}
+}
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.headerNavigation{
+    &__links{
+        width: 35%;
+        
+    }
+    &__item{
+        padding-left: 15%;
+    }
+}
+.head{
+
+    &__text{
+        width: 100%;
+    }
+    &__title{
+        font-size: 4em;
+    
+    }
+    &__subtitle{
+        margin: 5% auto;
+        width: 90%;
+        max-width: 500px;
+        font-size: 1.1em;
+
+    }
+
+}
+
+
+
+/////////////////////////////FOOTER
+.footer{
+    &__social{
+        font-size: 0.9em;
+    }
+    &__twitter{
+        color: #424242;
+        margin-right: 5%;
+    }
+    &__details{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__description{
+        width: 50%;
+    }
+    &__credits{
+        width: 50%;
+    }
+    &__copyrights{
+        text-align: right;
+        font-size: 1.1em;
+    }
+}
+}
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.headerNavigation{
+    &__links{
+        width: 30em;
+    }
+    &__item{
+        padding-left: 20%;
+    }
+}
+.head{
+
+    &__text{
+        width: 100%;
+    }
+    &__title{
+        font-size: 4em;
+    
+    }
+    &__subtitle{
+        margin: 5% auto;
+        width: 90%;
+        max-width: 500px;
+        font-size: 1.1em;
+
+    }
+
+}
+
+
+
+/////////////////////////////FOOTER
+.footer{
+    &__social{
+        font-size: 0.9em;
+    }
+    &__twitter{
+        color: #424242;
+        margin-right: 5%;
+    }
+    &__details{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__description{
+        width: 50%;
+    }
+    &__credits{
+        width: 50%;
+    }
+    &__copyrights{
+        text-align: right;
+        font-size: 1.1em;
+    }
+}
+}
+
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.headerNavigation{
+    &__links{
+        width: 70%;
+    }
+    &__item{
+        padding-left: 12%;
+    }
+}
+.head{
+
+    &__text{
+        width: 100%;
+    }
+    &__title{
+        font-size: 2.5em;
+    
+    }
+    &__subtitle{
+        margin: 5% auto;
+        width: 90%;
+        max-width: 500px;
+        font-size: 1.1em;
+
+    }
+
+}
+
+
+
+/////////////////////////////////// PRODUCTS
+.product-item{
+    margin-top: 40px;
+    margin-right: 0px;
+    height: 375px;
+    max-width: 320px;
+}
+
+
+
+
+//////////////////////////////////// FOOTER 
+.footer{
+    &__social{
+        font-size: 0.8em;
+    }
+    &__twitter{
+        color: #424242;
+        margin-right: 5%;
+    }
+    &__details{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__heading{
+        text-align: center;
+    }
+    &__description{
+        width: 100%;
+    }
+    &__credits{
+        width: 100%;
+    }
+    &__copyrights{
+        text-align: center;
+        font-size: 1.1em;
+    }
+}
+
+.footer-nav{
+        text-align: center;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        margin-top: 20px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+.headerNavigation{
+    &__links{
+        width: 70%;
+    }
+    &__item{
+        padding-left: 10%;
+    }
+}
+.head{
+
+    &__text{
+        width: 100%;
+    }
+    &__title{
+        font-size: 2.5em;
+    
+    }
+    &__subtitle{
+        margin: 5% auto;
+        width: 90%;
+        max-width: 500px;
+        font-size: 1.1em;
+
+    }
+
+}
+
+
+
+
+////////////////////////////////////PRODUCTS
+.product-item{
+    margin-top: 40px;
+    margin-right: 0px;
+    height: 375px;
+    max-width: 320px;
+}
+
+
+
+
+
+
+//////////////////////////////////// FOOTER 
+.footer{
+    &__social{
+        font-size: 0.8em;
+        
+    }
+    &__twitter{
+        color: #424242;
+        margin-right: 5%;
+    }
+    &__details{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__heading{
+        text-align: center;
+    }
+    &__description{
+        width: 100%;
+    }
+    &__credits{
+        width: 100%;
+    }
+    &__copyrights{
+        text-align: center;
+        font-size: 1.1em;
+    }
+}
+
+.footer-nav{
+        text-align: center;
+        font-size: 0.9em;
+
+        margin-bottom: 10px;
+        margin-top: 20px;
+}
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/js.js"></script>
+	<title>Test-shop</title>
+
+  <!--[if lt IE 9]>
+	<script>
+	  document.createElement('header');
+	  document.createElement('section');
+	  document.createElement('nav');
+	  document.createElement('main');
+	  document.createElement('article');
+	  document.createElement('aside');
+	  document.createElement('footer');
+	</script>
+	<![endif]-->
+
+</head>
+<body  ng-app="testTask">
+		<header class="head">
+			<nav class="headerNavigation">
+				<div class="headerNavigation__img"><img src="img/bot.png" alt=""></div>
+				<div class="headerNavigation__links">
+					
+					<a href="#" class="headerNavigation__item">Home</a>
+					<a href="#" class="headerNavigation__item">Products</a>
+					<a href="#" class="headerNavigation__item"><i class="fa-shopping-cart fa-lg"></i></a>
+				
+				</div>
+			</nav>
+			<div class="head__text">
+				<h2 class="head__title">Our clothing , your comfort</h2>
+				<h4 class="head__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+ magna aliqua.</h4>
+			</div>
+			<div class="head__arrow"><i class="fa-chevron-down fa-3x head__chevron-down"></i></div>
+		</header>
+
+	<div class="wrapper">
+
+<section class="products" ng-controller="productsCtrl">
+
+	<div class="products__selector">
+		<div class="filter">
+			<div class="filter__wrap">
+				<div class="filter__item">
+					<input id="men" class="filter__checkbox" type="checkbox" ng-model="showCategory.men">
+					<label class="filter__label" for="men">MEN</label>
+				</div>
+				<div class="filter__item">
+					<input id="women" class="filter__checkbox" type="checkbox" ng-model="showCategory.women">
+					<label class="filter__label" for="women">WOMEN</label>
+				</div>
+				<div class="filter__item">
+					<input id="child" class="filter__checkbox" type="checkbox" ng-model="showCategory.child">
+					<label class="filter__label" for="child">CHILDREN</label>
+				</div>
+			</div>
+				<button class="filter__button" type="submit" ng-click="showAll()">see all products</button>
+		</div>
+	</div>
+	
+		<div class="products__view">
+
+			<div class="product-item" ng-repeat="product in data.items | filter: changeFilter">
+
+				<div class="product-item__size">
+					<select class="product-item__selector">
+						<option class="product-item__selector-item" value="Size" ng-repeat="size in product.options">{{size}}</option>
+					</select>
+				</div>
+				<div class="product-item__img"><img src="img/{{product.img}}.png" alt=""></div>
+				<div class="product-item__details">
+					<div class="product-item__title">{{product.name}}</div>
+					<div class="product-item__price">{{product.price}} €</div>
+				</div>
+				
+			</div>
+
+
+
+
+		</div>
+
+
+</section>
+
+		<footer ng-controller="menuCtrl" class="footer">
+			<div class="footer__social">
+				<i class="fa-twitter fa-2x footer__twitter"></i>"E-commerce psd theme available"
+			</div>
+
+			<div class="footer__details">
+
+				<div class="footer__description">
+					<h3 class="footer__heading">trekking</h3>
+					<p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dignissimos perspiciatis, quidem assumenda laboriosam sequi. At quasi est qui beatae veniam, doloremque ad in similique id voluptatum culpa atque enim.</p>
+				</div>
+
+				<div class="footer__credits">
+					
+					<nav class="footer-nav">
+						<a ng-repeat="link in data.footerMenu" href="{{link.link}}" class="footer-nav__item" title="{{link.title}}">{{link.name}}</a>
+					</nav>
+					
+					<p class="footer__copyrights">Design by gianluca cosseta</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>
